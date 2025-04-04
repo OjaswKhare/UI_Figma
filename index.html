@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcami Elements</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Alcami</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <div class="search-icon" id="searchIcon">🔍</div>
+            <div class="cart-icon">🛒</div>
+            <div class="hamburger">☰</div>
+        </div>
+        <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Premium Quality Elements</h1>
+        <p>Discover our exclusive collection of Alcami Elements</p>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="product-gallery">
+            <img src="assets/images/product1.jpg" alt="Alcami Elements Serum" class="main-image" id="mainImage">
+            <div class="thumbnail-container">
+                <img src="assets/images/product1.jpg" alt="Serum Thumbnail" class="thumbnail active" data-image="product1.jpg">
+                <img src="assets/images/product2.jpg" alt="Cream Thumbnail" class="thumbnail" data-image="product2.jpg">
+                <img src="assets/images/product3.jpg" alt="Bottle Thumbnail" class="thumbnail" data-image="product3.jpg">
+                <img src="assets/images/product4.jpg" alt="Jar Thumbnail" class="thumbnail" data-image="product4.jpg">
+            </div>
+            <div class="gallery-controls">
+                <div class="arrow" id="prevArrow">←</div>
+                <div class="dots">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                </div>
+                <div class="arrow" id="nextArrow">→</div>
+            </div>
+        </div>
+        <div class="product-info">
+            <h2 class="product-title">Alcami Elements</h2>
+            <div class="product-price">$49.99</div>
+            <p class="product-description">
+                Our premium Alcami Elements collection offers the highest quality materials 
+                with exceptional durability and style.
+            </p>
+            
+            <div class="option-group">
+                <div class="option-title">Flavors</div>
+                <div class="radio-option">
+                    <input type="radio" id="flavor1" name="flavor" value="original" checked>
+                    <label for="flavor1">Original</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="flavor2" name="flavor" value="mint">
+                    <label for="flavor2">Mint</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="flavor3" name="flavor" value="citrus">
+                    <label for="flavor3">Citrus</label>
+                </div>
+            </div>
+            
+            <div class="option-group">
+                <div class="option-title">Purchase Type</div>
+                <div class="radio-option">
+                    <input type="radio" id="type1" name="type" value="single" checked>
+                    <label for="type1">Single Pack</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="type2" name="type" value="three">
+                    <label for="type2">Three Pack</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="type3" name="type" value="subscription">
+                    <label for="type3">Subscription</label>
+                </div>
+            </div>
+            
+            <button class="add-to-cart" id="addToCart">Add to Cart - Original, Single Pack</button>
+        </div>
+    </section>
+
+    <!-- Percentage Section -->
+    <section class="percentage-section">
+        <h2 class="section-title">Why Choose Alcami</h2>
+        <div class="percentage-container">
+            <div class="percentage-item">
+                <div class="percentage-number" id="percentage1">0%</div>
+                <div class="percentage-label">Customer Satisfaction</div>
+            </div>
+            <div class="percentage-item">
+                <div class="percentage-number" id="percentage2">0%</div>
+                <div class="percentage-label">Organic Ingredients</div>
+            </div>
+            <div class="percentage-item">
+                <div class="percentage-number" id="percentage3">0%</div>
+                <div class="percentage-label">Repeat Customers</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section class="table-section">
+        <h2 class="section-title">Product Specifications</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Material</td>
+                    <td>Premium Organic Cotton</td>
+                </tr>
+                <tr>
+                    <td>Dimensions</td>
+                    <td>10 x 5 x 3 inches</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>0.5 lbs</td>
+                </tr>
+                <tr>
+                    <td>Color Options</td>
+                    <td>3 (Original, Mint, Citrus)</td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>1 Year Limited</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p class="testimonial-text">"The Alcami Elements are simply amazing. The quality is outstanding!"</p>
+                <p class="testimonial-author">- Sarah J.</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"I've been a customer for over a year now."</p>
+                <p class="testimonial-author">- Michael T.</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"The mint flavor is so refreshing. Highly recommend!"</p>
+                <p class="testimonial-author">- Emily R.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What materials are used?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Made from premium organic cotton with natural fibers.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How often should I replace them?</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>With proper care, they last 6-12 months.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Home  </a>
+            <a href="#">Shop  </a>
+            <a href="#">Elements  </a>
+            <a href="#">About Us  </a>
+            <a href="#">Blog  </a>
+            <a href="#">Contact  </a>
+        </div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>© 2024 ALCAMI ELEMENTS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
